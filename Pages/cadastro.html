@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descarte Certo - Cadastro</title>
+    <link rel="stylesheet" href="/Css/casdastro-login.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="logo">
+        <span class="logo-circle">DC</span>
+        <span class="logo-text">Descarte Certo</span>
+      </div>
+      <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#">Mapa</a>
+        <a href="#">Denúncias</a>
+        <a href="#">Educativo</a>
+        <a href="#">Quem Somos</a>
+      </nav>
+      <div class="auth-buttons">
+        <button class="login">Entrar</button>
+        <button class="signup">Cadastre-se</button>
+      </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main>
+      <div class="form-container">
+        <h2>Cadastre-se</h2>
+        <p>Crie sua conta para começar a usar o Descarte Certo</p>
+
+        <form>
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Seu nome completo" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="seu@gmail.com" />
+
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="********" />
+
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="000000000-00" />
+
+          <div class="termos">
+            <input type="checkbox" id="termos" />
+            <label for="termos"
+              >Concordo com os termos de uso e política de privacidade</label
+            >
+          </div>
+
+          <button type="submit" class="criar-conta">Criar conta</button>
+          <p class="login-link">
+            Já tem uma conta? <a href="login.html">Entrar</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <strong class="logo-text">Descarte Certo</strong>
+          <p>
+            Plataforma para descarte correto de resíduos e conscientização
+            ambiental.
+          </p>
+        </div>
+
+        <div class="footer-columns">
+          <div>
+            <strong>Navegação:</strong>
+            <p>Início</p>
+            <p>Mapa</p>
+            <p>Denúncias</p>
+            <p>Área Educativa</p>
+            <p>Quem Somos</p>
+          </div>
+          <div>
+            <strong>Recursos:</strong>
+            <p>Materiais Educativos</p>
+            <p>Programa de Incentivo</p>
+            <p>Parceiros</p>
+          </div>
+          <div>
+            <strong>Contato:</strong>
+            <p>contato@descartecerto.com.br</p>
+            <p>(00) 12345-6789</p>
+            <p class="fale-conosco">Fale conosco</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
