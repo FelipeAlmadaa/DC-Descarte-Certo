@@ -1,0 +1,158 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007b55;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-circle {
+  background-color: white;
+  color: #007b55;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.auth-buttons button {
+  margin-left: 12px;
+  background-color: white;
+  color: #007b55;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mapa-section {
+  text-align: center;
+}
+
+.mapa-section h2 {
+  font-size: 28px;
+  color: #007b55;
+  margin-bottom: 10px;
+}
+
+.mapa-section p {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 16px;
+}
+
+#mapa {
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: #003d2c;
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.footer-left .logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-columns div {
+  min-width: 150px;
+}
+
+.footer-columns strong {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-columns p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer-columns .fale-conosco {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
