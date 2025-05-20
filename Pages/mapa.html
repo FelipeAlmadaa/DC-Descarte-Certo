@@ -10,6 +10,7 @@
       href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     />
   </head>
+
   <body>
     <!-- Cabeçalho -->
     <header>
@@ -18,11 +19,11 @@
         <span class="logo-text">Descarte Certo</span>
       </div>
       <nav class="menu">
-        <a href="#">Início</a>
-        <a href="mapa.html">Mapa</a>
-        <a href="#">Denúncias</a>
-        <a href="#">Educativo</a>
-        <a href="#">Quem Somos</a>
+        <a href="/Pages/index.html">Início</a>
+        <a href="/Pages/mapa.html">Mapa</a>
+        <a href="/Pages/denuncias.html">Denúncias</a>
+        <a href="/Pages/educativo.html">Educativo</a>
+        <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
       <div class="auth-buttons">
         <button class="login">Entrar</button>
@@ -32,14 +33,66 @@
 
     <!-- Conteúdo principal -->
     <main>
+      <section class="info-ecopontos">
+        <h2>Informações Importantes</h2>
+        <p>
+          <strong>Horário de funcionamento:</strong> Segunda-feira a sábado, das
+          7h às 19h.
+        </p>
+        <p>
+          <strong>Serviços:</strong> Os Ecopontos de São Luís recebem os
+          seguintes tipos de resíduos por pessoa:
+        </p>
+
+        <ul>
+          <li>
+            <strong>ELETRÔNICOS:</strong> até 3 unidades (TV, monitores, mouses,
+            etc.)*
+          </li>
+          <li>
+            <strong>ENTULHO:</strong> até 2m³ (resíduos da construção civil)*
+          </li>
+          <li><strong>MADEIRAS:</strong> até 2m³*</li>
+          <li><strong>ÓLEO DE COZINHA:</strong> até 6 litros*</li>
+          <li><strong>PNEUS:</strong> até 4 unidades*</li>
+          <li><strong>PODAS E RESTO DE CAPINA:</strong> até 2m³*</li>
+          <li>
+            <strong>RECICLÁVEIS:</strong> até 300 litros* (plástico, papel,
+            metais, vidro)
+          </li>
+          <li>
+            <strong>VOLUMOSOS:</strong> até 2 volumes* (sofás, colchões, móveis,
+            etc.)
+          </li>
+        </ul>
+
+        <p class="nota">
+          * Limites por pessoa por vez, segundo regulamentações da prefeitura. É
+          importante destacar que existem resíduos que não podem ser entregues
+          no Ecopontos. São eles: lixo doméstico, animais mortos, resíduos
+          hospitalares e resíduos contaminantes como pilhas, baterias, lâmpadas,
+          cartuchos de tonner, aparelhos celulares etc. O lixo doméstico é
+          aquele como louça, papel higiênico e fralda descartável, alimentos,
+          como vegetais e frutas, além de palitos de madeira e papéis
+          engordurados. Eles devem ser acondicionados em sacos plásticos bem
+          fechados e colocados na porta do domicílio apenas nos dias e horários
+          de coleta, para serem recolhidos pelos caminhões da coleta.
+        </p>
+      </section>
+
+      <section class="lista-ecopontos">
+        <h2>Lista de Ecopontos</h2>
+        <ul id="lista-ecopontos"></ul>
+      </section>
       <section class="mapa-section">
         <h2>Mapa de Ecopontos</h2>
-        <p>Visualize os pontos de descarte correto da sua cidade:</p>
+        <p>Visualize os pontos de descarte correto em São Luis, MA:</p>
         <div id="mapa"></div>
       </section>
     </main>
 
     <!-- Rodapé -->
+
     <footer>
       <div class="footer-content">
         <div class="footer-left">
@@ -52,12 +105,15 @@
         <div class="footer-columns">
           <div>
             <strong>Navegação:</strong>
-            <p>Início</p>
-            <p>Mapa</p>
-            <p>Denúncias</p>
-            <p>Área Educativa</p>
-            <p>Quem Somos</p>
+            <nav class="footer-menu">
+              <a href="/Pages/index.html">Início</a><br />
+              <a href="/Pages/mapa.html">Mapa</a><br />
+              <a href="/Pages/denuncias.html">Denúncias</a><br />
+              <a href="/Pages/educativo.html">Área Educativa</a><br />
+              <a href="/Pages/quemsomos.html">Quem Somos</a>
+            </nav>
           </div>
+
           <div>
             <strong>Recursos:</strong>
             <p>Materiais Educativos</p>

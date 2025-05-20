@@ -14,6 +14,15 @@ body {
   flex-direction: column;
 }
 
+:root {
+  --verde: #00a651;
+  --verde-escuro: #2e8b57;
+  --verde-claro: #4caf50;
+  --cinza-claro: #f5f5f5;
+  --branco: #ffffff;
+  --preto: #111111;
+}
+
 /* Cabeçalho */
 header {
   background-color: #007b55;
@@ -67,99 +76,105 @@ header {
   background-color: #e0e0e0;
 }
 
-/* Conteúdo principal */
-main {
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10%;
+  background-color: var(--branco);
+  gap: 2rem;
+}
+
+.hero-texto {
   flex: 1;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 500px;
 }
 
-.mapa-section {
+.hero-texto h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--verde);
+}
+
+.hero-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-imagem img {
+  max-width: 80%;
+  height: auto;
+}
+
+.saiba-mais {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: var(--verde);
+  border: 1px solid var(--verde);
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.saiba-mais:hover {
+  background-color: var(--verde);
+  color: white;
+}
+
+/* Linha divisória */
+.divisor {
+  height: 1px;
+  background-color: #e0e0e0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Convite Section */
+.convite {
+  background-color: var(--verde-claro);
+  color: white;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
-.mapa-section h2 {
-  margin-top: 40px;
-  font-size: 28px;
-  color: #007b55;
-  margin-bottom: 10px;
+.convite h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.mapa-section p {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 16px;
+.convite p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#mapa {
-  height: 500px;
-  width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  display: block;
+.cadastre-agora {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: var(--verde-claro);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.lista-ecopontos {
-  cursor: pointer;
-  background-color: #ffffff;
-  padding: 20px;
-  border-bottom: 2px solid #ccc;
-}
-
-.lista-ecopontos h2 {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #007b5e;
-}
-
-.lista-ecopontos ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.lista-ecopontos li {
-  padding: 6px 0;
-  border-bottom: 1px dashed #ccc;
-  font-size: 14px;
-}
-.info-ecopontos {
-  background-color: #ffffff;
-  padding: 20px 30px;
-  margin-bottom: 20px;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
-}
-
-.info-ecopontos h2 {
-  color: #007b5e;
-  margin-bottom: 10px;
-}
-
-.info-ecopontos p {
-  margin: 8px 0;
-  font-size: 15px;
-  color: #333;
-}
-
-.info-ecopontos ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin: 10px 0;
-}
-
-.info-ecopontos li {
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: #444;
-}
-
-.info-ecopontos .nota {
-  font-size: 12px;
-  font-style: italic;
-  color: #777;
-  margin-top: 10px;
+.cadastre-agora:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Rodapé */
@@ -223,7 +238,6 @@ footer {
   font-weight: bold;
   color: #ffffff;
 }
-
 /* Ajuste para o menu de navegação no footer */
 .footer-columns nav.footer-menu {
   gap: 0px;
@@ -244,4 +258,65 @@ footer {
   color: #ffffff;
   text-decoration: underline;
   outline: none;
+}
+/* Responsividade */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 2rem 5%;
+  }
+
+  footer {
+    padding: 2rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-texto {
+    margin-bottom: 2rem;
+  }
+
+  .hero-imagem {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .hero-texto h1 {
+    font-size: 2.5rem;
+  }
+
+  .convite h2 {
+    font-size: 2rem;
+  }
 }

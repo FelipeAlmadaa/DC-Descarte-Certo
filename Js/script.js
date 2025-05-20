@@ -9,9 +9,14 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 // Lista de ecopontos em São Luís
 const ecopontos = [
   {
-    nome: "Ecoponto Parque Amazonas",
-    endereco: "Av. dos Africanos, s/nº, Bairro de Fátima",
-    coord: [-2.550021653793905, -44.284370541606506],
+    nome: "Ecoponto - Parque Amazonas (sentido bairro)",
+    endereco: "Parque Pindorama",
+    coord: [-2.5502233338483578, -44.283568451021985],
+  },
+  {
+    nome: "Ecoponto - Parque Amazonas",
+    endereco: "Parque Amazonas",
+    coord: [-2.549880351081346, -44.28401906213324],
   },
   {
     nome: "Ecoponto Angelim",
@@ -25,93 +30,83 @@ const ecopontos = [
   },
   {
     nome: "Ecoponto Habitacional Turu",
-    endereco: "Travessa G, s/nº, Habitacional Turu",
-    coord: [-2.54, -44.29],
+    endereco: "R. C, 118-226 - Jardim Eldorado",
+    coord: [-2.5025122998255656, -44.22718587377358],
   },
   {
     nome: "Ecoponto Jardim América",
-    endereco: "Avenida 03, s/nº, Jardim América",
-    coord: [-2.55, -44.3],
+    endereco: "Cidade Operária",
+    coord: [-2.581766156445941, -44.19292022959337],
   },
   {
     nome: "Ecoponto Jardim Renascença",
     endereco: "Rua Netuno, Jardim Renascença",
-    coord: [-2.56, -44.31],
+    coord: [-2.494392342767358, -44.288511816101504],
   },
   {
     nome: "Ecoponto Residencial Esperança",
-    endereco: "Rua Doutor Ribeiro, s/nº, Residencial Esperança",
-    coord: [-2.57, -44.32],
+    endereco: "Conj. Manoel Beckman, 30 - Res. Esperança",
+    coord: [-2.5204473888866956, -44.240729655555015],
   },
   {
-    nome: "Ecoponto Cidade Operária - Unidade 101",
-    endereco: "Avenida Este 203, Cidade Operária",
-    coord: [-2.58, -44.33],
+    nome: "Ecoponto Cidade Operária",
+    endereco: "Cidade Operária",
+    coord: [-2.5639927868204664, -44.19997860027544],
   },
   {
     nome: "Ecoponto São Francisco",
     endereco: "Avenida Ferreira Gullar, São Francisco",
-    coord: [-2.59, -44.34],
+    coord: [-2.5114124009830063, -44.30925911610169],
   },
   {
     nome: "Ecoponto Anil",
-    endereco: "Rua 02, Conjunto Rancho Dom Luiz, Anil",
-    coord: [-2.6, -44.35],
+    endereco: "Rua Dois, 608-648 - Anil",
+    coord: [-2.551107215404791, -44.23580336821785],
   },
   {
     nome: "Ecoponto São Raimundo",
-    endereco: "Rua 03, Quadra 50, São Raimundo",
-    coord: [-2.61, -44.36],
-  },
-  {
-    nome: "Ecoponto Cidade Operária - Unidade 205",
-    endereco: "Avenida Leste 103, Cidade Operária",
-    coord: [-2.62, -44.37],
+    endereco: "R. Dois, 330 - São Raimundo",
+    coord: [-2.5939639643506807, -44.23199828128432],
   },
   {
     nome: "Ecoponto Itapiracó",
-    endereco: "Avenida Joaquim Mochel, Cohatrac IV",
-    coord: [-2.63, -44.38],
-  },
-  {
-    nome: "Ecoponto Sacavém",
-    endereco: "Avenida dos Africanos, Sacavém",
-    coord: [-2.64, -44.39],
+    endereco: "Avenida Joaquim Mochel - Itapiracó",
+    coord: [-2.532340305654522, -44.20287400260948],
   },
   {
     nome: "Ecoponto Parque dos Nobres",
-    endereco: "Rua dos Imperadores, Parque dos Nobres",
-    coord: [-2.65, -44.4],
+    endereco: "Parque dos Nobres",
+    coord: [-2.557929115967309, -44.27688538726522],
   },
   {
     nome: "Ecoponto Barreto",
-    endereco: "Rua Cinco de Janeiro, Barreto/Ivar Saldanha",
-    coord: [-2.66, -44.41],
+    endereco: "R. Jorge Damous, 13 - Vila Ivar Saldanha",
+    coord: [-2.54432188704111, -44.265324473773525],
   },
   {
     nome: "Ecoponto Primavera",
-    endereco: "Avenida Contorno Sul, Residencial Primavera",
-    coord: [-2.67, -44.42],
+    endereco: "Cohatrac 3",
+    coord: [-2.5400442510836, -44.195672573773564],
   },
   {
-    nome: "Ecoponto Cohaserma",
-    endereco: "Rua 14, s/nº, Cohaserma",
-    coord: [-2.68, -44.43],
+    nome: "Ecoponto Cohaserma 2",
+    endereco: "Rua Quatorze - Parque Athenas",
+    coord: [-2.506727030351073, -44.24765010260932],
   },
   {
-    nome: "Ecoponto Centro",
-    endereco: "Avenida Senador Vitorino Freire, Anel Viário",
-    coord: [-2.69, -44.44],
+    nome: "Ecoponto CEMAR",
+    endereco: "Avenida Senador Vitorino Freire",
+    coord: [-2.5407788425721827, -44.28876600260921],
   },
   {
     nome: "Ecoponto Vila Isabel",
-    endereco: "Avenida dos Portugueses, Vila Isabel",
-    coord: [-2.7, -44.45],
+    endereco: "R. D, 19a - Anjo da Guarda",
+    coord: [-2.562024024970923, -44.317631989117444],
   },
   {
     nome: "Ecoponto Cohab Anil",
     endereco: "Avenida Principal, Planalto Anil I",
-    coord: [-2.71, -44.46],
+    coord: [-2.5428609608930546, -44.21347533144555],
   },
 ];
 
@@ -121,4 +116,27 @@ ecopontos.forEach((ponto) => {
       <strong>${ponto.nome}</strong><br>
       ${ponto.endereco}
     `);
+});
+
+const lista = document.getElementById("lista-ecopontos");
+
+ecopontos.forEach((ponto) => {
+  // Cria marcador
+  const marker = L.marker(ponto.coord)
+    .addTo(mapa)
+    .bindPopup(`<strong>${ponto.nome}</strong><br>${ponto.endereco}`);
+
+  // Cria item na lista
+  const item = document.createElement("li");
+  item.innerHTML = `<strong>${ponto.nome}</strong> - ${ponto.endereco}`;
+  item.addEventListener("click", () => {
+    mapa.setView(ponto.coord, 16);
+    marker.openPopup();
+
+    // Scroll suave até o mapa
+    const mapaElemento = document.getElementById("mapa");
+    mapaElemento.scrollIntoView({ behavior: "smooth" });
+  });
+
+  lista.appendChild(item);
 });
