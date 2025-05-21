@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descarte Certo</title>
+    <link rel="stylesheet" href="/Css/denuncias.css" />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="logo">
+        <span class="logo-circle">DC</span>
+        <span class="logo-text">Descarte Certo</span>
+      </div>
+      <nav class="menu">
+        <a href="/Pages/index.html">Início</a>
+        <a href="/Pages/mapa.html">Mapa</a>
+        <a href="/Pages/denuncias.html">Denúncias</a>
+        <a href="/Pages/educativo.html">Educativo</a>
+        <a href="/Pages/quemsomos.html">Quem Somos</a>
+      </nav>
+      <div class="auth-buttons">
+        <button
+          onclick="window.location.href='/Pages/login.html'"
+          class="login"
+        >
+          Entrar
+        </button>
+        <button
+          onclick="window.location.href='/Pages/cadastro.html'"
+          class="signup"
+        >
+          Cadastre-se
+        </button>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container-centralizado">
+      <h1>Denúncias</h1>
+      <p class="sub">Preencha os dados abaixo para fazer sua denúncia.</p>
+
+      <form id="formulario">
+        <label>Nome completo <span class="obrigatorio">*</span></label>
+        <input name="nome" type="text" required />
+        <span class="erro"></span>
+
+        <label>Email <span class="obrigatorio">*</span></label>
+        <input name="Email" type="email" required />
+        <span class="erro"></span>
+
+        <label>Telefone <span class="obrigatorio">*</span></label>
+        <input name="telefone" type="tel" pattern="^\d{10,11}$" required />
+        <span class="erro"></span>
+
+        <p>
+          Endereço do local onde o resíduo sólido está sendo descartado
+          incorretamente
+        </p>
+
+        <div class="horizontal">
+          <div>
+            <label>CEP</label>
+            <input name="cep" type="text" pattern="^\d{8}$" required />
+
+            <label>Rua </label>
+            <input name="rua" type="text" required />
+
+            <label>Número </label>
+            <input name="Número" type="text" pattern="^\d+$" required />
+          </div>
+
+          <div>
+            <label>Cidade</label>
+            <input name="Cidade" type="text" required />
+
+            <label>Estado</label>
+            <input name="Estado" type="text" required />
+
+            <label>Complemento</label>
+            <input name="Complemento" type="text" />
+            <span class="erro"></span>
+          </div>
+        </div>
+
+        <div>
+          <label for="end"
+            >Caso você não saiba o endereço, escreva aqui como podemos chegar ao
+            local.</label
+          >
+          <textarea
+            name="end"
+            id="end"
+            rows="5"
+            placeholder="Escreva aqui..."
+          ></textarea>
+          <span class="erro"></span>
+        </div>
+
+        <div>
+          <p>Registro</p>
+          <label>Foto do local <span class="obrigatorio">*</span></label>
+          <input name="foto" type="file" required />
+          <span class="erro"></span>
+
+          <label for="complemento">Deixe sua reclamação</label>
+          <textarea
+            name="reclamacao"
+            id="complemento"
+            rows="5"
+            placeholder="Escreva aqui..."
+          ></textarea>
+          <span class="erro"></span>
+        </div>
+
+        <div class="conteiner">
+          <input class="checkbox" type="checkbox" name="termo" required />
+          <label
+            >Declaro que li e concordo com os Termos de responsabilidade.
+            <span class="obrigatorio">*</span></label
+          >
+          <span class="erro"></span>
+        </div>
+
+        <div class="horizontal">
+          <input type="reset" value="Limpar" />
+          <input type="button" id="salvar" value="Salvar informações" />
+          <input type="button" id="enviar" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <strong class="logo-text">Descarte Certo</strong>
+          <p>
+            Plataforma para descarte correto de resíduos e conscientização
+            ambiental.
+          </p>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <strong>Navegação:</strong>
+            <nav class="footer-menu">
+              <a href="/Pages/index.html">Início</a><br />
+              <a href="/Pages/mapa.html">Mapa</a><br />
+              <a href="/Pages/denuncias.html">Denúncias</a><br />
+              <a href="/Pages/educativo.html">Área Educativa</a><br />
+              <a href="/Pages/quemsomos.html">Quem Somos</a>
+            </nav>
+          </div>
+
+          <div>
+            <strong>Recursos:</strong>
+            <p>Materiais Educativos</p>
+            <p>Programa de Incentivo</p>
+            <p>Parceiros</p>
+          </div>
+          <div>
+            <strong>Contato:</strong>
+            <p>contato@descartecerto.com.br</p>
+            <p>(00) 12345-6789</p>
+            <p class="fale-conosco">Fale conosco</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Js/denuncias.js"></script>
+  </body>
+</html>
