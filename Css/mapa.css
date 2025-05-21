@@ -64,7 +64,9 @@ header {
 }
 
 .auth-buttons button:hover {
-  background-color: #e0e0e0;
+  background-color: #000000;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
 /* Conteúdo principal */
@@ -106,6 +108,7 @@ main {
   background-color: #ffffff;
   padding: 20px;
   border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
 }
 
 .lista-ecopontos h2 {

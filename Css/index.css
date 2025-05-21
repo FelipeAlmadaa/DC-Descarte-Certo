@@ -73,7 +73,9 @@ header {
 }
 
 .auth-buttons button:hover {
-  background-color: #e0e0e0;
+  background-color: #000000;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 
 /* Hero Section */

@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  color: green;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.botoes a {
+  padding: 6px 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.botao-verde {
+  background-color: green;
+  color: white;
+}
+
+.botao-transparente {
+  border: 1px solid green;
+  color: green;
+}
+
+.texto {
+  max-width: 400px;
+}
+
+.texto h1 {
+  color: green;
+}
+
+.hero-texto h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: green;
+}
+
+.subtitulo {
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.botao-borda-verde {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid green;
+  color: green;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.chamada-verde {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.chamada-verde h2 {
+  margin-bottom: 10px;
+}
+
+.botao-branco {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: green;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rodape {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.introducao {
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.imagem img {
+  max-width: 300px;
+  /* ou ajuste conforme necessário */
+  height: auto;
+  margin-left: 350px;
+}
+
+.conteudo-educativo {
+  max-width: 800px;
+  /* controla a largura máxima */
+  margin: 40px auto;
+  /* centraliza horizontalmente */
+  padding: 20px;
+  /* espaço interno */
+  background-color: #f9f9f9;
+  /* cor de fundo leve */
+  border-radius: 8px;
+  /* cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* sombra suave */
+  font-family: Arial, sans-serif;
+  /* fonte limpa */
+  line-height: 1.6;
+  /* melhor leitura */
+}
+
+footer {
+  background-color: #003d2c;
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo no meio da tela */
+}
+
+.footer-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza as colunas */
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.footer-left {
+  max-width: 300px;
+  margin-bottom: 20px;
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.footer-left .logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-columns div {
+  min-width: 150px;
+}
+
+.footer-columns strong {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-columns p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.footer-columns .fale-conosco {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Ajuste para o menu de navegação no footer */
+.footer-columns nav.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.footer-columns nav.footer-menu a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-columns nav.footer-menu a:hover,
+.footer-columns nav.footer-menu a:focus {
+  color: #ffffff;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007b55;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-circle {
+  background-color: white;
+  color: #007b55;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.auth-buttons button {
+  margin-left: 12px;
+  background-color: white;
+  color: #007b55;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-buttons button:hover {
+  background-color: #e0e0e0;
+}
