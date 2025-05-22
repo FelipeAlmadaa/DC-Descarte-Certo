@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     />
+    <link rel="stylesheet" href="/Css/modal.css" />
   </head>
 
   <body>
@@ -55,7 +56,7 @@
         <h2>Lista de Ecopontos</h2>
         <ul id="lista-ecopontos"></ul>
       </section>
-    
+
       <section class="info-ecopontos">
         <h2>Informações Importantes</h2>
         <p>
@@ -141,10 +142,17 @@
         </div>
       </div>
     </footer>
-
+    <!-- ⬇️ Modal personalizado de alert -->
+    <div id="customAlert" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p id="alertMessage"></p>
+      </div>
+    </div>
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="/Js/script.js"></script>
     <script src="/Js/autenticacao.js"></script>
+    <script src="/Js/modal.js"></script>
   </body>
 </html>

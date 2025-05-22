@@ -7,6 +7,7 @@
       <title>Descarte Certo</title>
       <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
       <link rel="stylesheet" href="/Css/educativo.css" />
+      <link rel="stylesheet" href="/Css/modal.css" />
     </head>
 
     <body>
@@ -20,8 +21,16 @@
         </a>
         <nav class="menu">
           <a href="/Pages/index.html">Início</a>
-          <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
-          <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+          <a
+            href="javascript:void(0);"
+            onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')"
+            >Mapa</a
+          >
+          <a
+            href="javascript:void(0);"
+            onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')"
+            >Denúncias</a
+          >
           <a href="/Pages/educativo.html">Educativo</a>
           <a href="/Pages/quemsomos.html">Quem Somos</a>
         </nav>
@@ -363,8 +372,16 @@
               <strong>Navegação:</strong>
               <nav class="footer-menu">
                 <a href="/Pages/index.html">Início</a>
-                <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
-                <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+                <a
+                  href="javascript:void(0);"
+                  onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')"
+                  >Mapa</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')"
+                  >Denúncias</a
+                >
                 <a href="/Pages/educativo.html">Área Educativa</a>
                 <a href="/Pages/quemsomos.html">Quem Somos</a>
               </nav>
@@ -385,8 +402,16 @@
           </div>
         </div>
       </footer>
+      <!-- ⬇️ Modal personalizado de alert -->
+      <div id="customAlert" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="alertMessage"></p>
+        </div>
+      </div>
       <script src="/Js/autenticacao.js"></script>
       <script src="/Js/authGuard.js"></script>
+      <script src="/Js/modal.js"></script>
     </body>
   </html>
 </html>

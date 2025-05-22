@@ -6,6 +6,7 @@
     <title>Descarte Certo - Cadastro</title>
     <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
     <link rel="stylesheet" href="/Css/casdastro-login.css" />
+    <link rel="stylesheet" href="/Css/modal.css">
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -111,7 +112,16 @@
         </div>
       </div>
     </footer>
+    <!-- ⬇️ Modal personalizado de alert -->
+    <div id="customAlert" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p id="alertMessage"></p>
+      </div>
+    </div>
     <script src="/Js/script-cadastro.js"></script>
     <script src="/Js/authGuard.js"></script>
+    <script src="/Js/modal.js"></script>
+
   </body>
 </html>

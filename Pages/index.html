@@ -6,6 +6,7 @@
     <title>Descarte Certo</title>
     <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
     <link rel="stylesheet" href="/Css/index.css" />
+    <link rel="stylesheet" href="/Css/modal.css" />
   </head>
   <body>
     <!-- Cabeçalho -->
@@ -18,14 +19,32 @@
       </a>
       <nav class="menu">
         <a href="/Pages/index.html">Início</a>
-        <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
-        <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+        <a
+          href="javascript:void(0);"
+          onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')"
+          >Mapa</a
+        >
+        <a
+          href="javascript:void(0);"
+          onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')"
+          >Denúncias</a
+        >
         <a href="/Pages/educativo.html">Educativo</a>
         <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
       <div class="auth-buttons" id="authArea">
-        <button onclick="window.location.href='/Pages/login.html'" class="login">Entrar</button>
-        <button onclick="window.location.href='/Pages/cadastro.html'" class="signup">Cadastre-se</button>
+        <button
+          onclick="window.location.href='/Pages/login.html'"
+          class="login"
+        >
+          Entrar
+        </button>
+        <button
+          onclick="window.location.href='/Pages/cadastro.html'"
+          class="signup"
+        >
+          Cadastre-se
+        </button>
       </div>
     </header>
     <div class="divisor"></div>
@@ -69,8 +88,16 @@
             <strong>Navegação:</strong>
             <nav class="footer-menu">
               <a href="/Pages/index.html">Início</a>
-              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
-              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+              <a
+                href="javascript:void(0);"
+                onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')"
+                >Mapa</a
+              >
+              <a
+                href="javascript:void(0);"
+                onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')"
+                >Denúncias</a
+              >
               <a href="/Pages/educativo.html">Área Educativa</a>
               <a href="/Pages/quemsomos.html">Quem Somos</a>
             </nav>
@@ -91,11 +118,17 @@
         </div>
       </div>
     </footer>
-
+    <!-- ⬇️ Modal personalizado de alert -->
+    <div id="customAlert" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p id="alertMessage"></p>
+      </div>
+    </div>
     <script>
-      const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
-      const authArea = document.getElementById('authArea');
-      const convite = document.getElementById('convite');
+      const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+      const authArea = document.getElementById("authArea");
+      const convite = document.getElementById("convite");
 
       if (usuario) {
         authArea.innerHTML = `
@@ -111,10 +144,11 @@
       }
 
       function logout() {
-        localStorage.removeItem('usuarioLogado');
+        localStorage.removeItem("usuarioLogado");
         window.location.reload();
       }
     </script>
     <script src="/Js/authGuard.js"></script>
+    <script src="/Js/modal.js"></script>
   </body>
 </html>

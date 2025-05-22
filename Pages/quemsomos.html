@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/Css/modal.css" />
   </head>
   <body>
     <header>
@@ -23,8 +24,16 @@
       </a>
       <nav class="menu">
         <a href="/Pages/index.html">Início</a>
-              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
-              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+        <a
+          href="javascript:void(0);"
+          onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')"
+          >Mapa</a
+        >
+        <a
+          href="javascript:void(0);"
+          onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')"
+          >Denúncias</a
+        >
         <a href="/Pages/educativo.html">Educativo</a>
         <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
@@ -143,8 +152,16 @@
             <strong>Navegação:</strong>
             <nav class="footer-menu">
               <a href="/Pages/index.html">Início</a>
-              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
-              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+              <a
+                href="javascript:void(0);"
+                onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')"
+                >Mapa</a
+              >
+              <a
+                href="javascript:void(0);"
+                onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')"
+                >Denúncias</a
+              >
               <a href="/Pages/educativo.html">Área Educativa</a>
               <a href="/Pages/quemsomos.html">Quem Somos</a>
             </nav>
@@ -165,7 +182,15 @@
         </div>
       </div>
     </footer>
+    <!-- ⬇️ Modal personalizado de alert -->
+    <div id="customAlert" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <p id="alertMessage"></p>
+      </div>
+    </div>
     <script src="/Js/autenticacao.js"></script>
     <script src="/Js/authGuard.js"></script>
+    <script src="/Js/modal.js"></script>
   </body>
 </html>
