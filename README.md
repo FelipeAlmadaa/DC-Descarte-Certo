@@ -43,4 +43,59 @@ Bem-vindo ao repositório front-end do projeto Descarte Certo (DC), uma platafor
 ---
 
 ## 🗂️ Estrutura de Pastas
+/
+├── Pages/
+│ ├── index.html
+│ ├── login.html
+│ ├── cadastro.html
+│ ├── mapa.html
+│ └── ...
+├── Css/
+│ └── estilo.css
+├── Js/
+│ ├── script-index.js
+│ ├── script-login.js
+│ └── ...
+├── imgs/
+│ └── faviconDC.png
+└── README.md
 
+yaml
+Copiar
+Editar
+
+---
+
+## 📦 Instalação local
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/DC-frontend.git
+Abra o arquivo Pages/index.html no navegador ou use uma extensão de servidor local (ex: Live Server).
+
+Verifique se o back-end está em funcionamento localmente ou hospedado.
+
+🔒 Acesso Restrito
+Algumas páginas (como Mapa e Denúncias) só estão acessíveis após login. Usuários não autenticados são redirecionados à página de login com uma mensagem amigável.
+
+🧪 Melhorias Futuras
+Autenticação JWT integrada entre front e back
+
+Upload de imagens nas denúncias
+
+Área do usuário com histórico de ações
+
+Dashboard com estatísticas dos ecopontos
+
+👨‍💻 Equipe
+Este projeto foi desenvolvido durante o Desafio 4 – Conectando o Maranhão.
+
+👤 Fulano (Líder e Back-end)
+
+👤 Ciclana (Front-end)
+
+👤 Beltrano (Design UI/UX)
+
+📄 Licença
+Este projeto é de código aberto e livre para fins educativos e sociais.
