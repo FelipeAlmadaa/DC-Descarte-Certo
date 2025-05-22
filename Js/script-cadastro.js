@@ -14,7 +14,7 @@ document.getElementById('formCadastro').addEventListener('submit', async functio
   };
 
   try {
-    const resposta = await fetch('http://localhost:5000/api/usuarios', {
+    const resposta = await fetch('https://dc-descarte-certo-backend.onrender.com/api/usuarios', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(dados) // ou os campos que estiverem no formulário

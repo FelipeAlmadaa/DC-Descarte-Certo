@@ -13,7 +13,7 @@ if (!email || !senha) {
 }
 
 try {
-  const resposta = await fetch('http://localhost:5000/api/usuarios/login', {
+  const resposta = await fetch('https://dc-descarte-certo-backend.onrender.com/api/usuarios/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ email, senha })
