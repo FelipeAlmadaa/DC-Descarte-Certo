@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descarte Certo - Mapa</title>
     <link rel="stylesheet" href="/Css/mapa.css" />
+    <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
@@ -14,10 +15,12 @@
   <body>
     <!-- Cabeçalho -->
     <header>
-      <div class="logo">
-        <span class="logo-circle">DC</span>
-        <span class="logo-text">Descarte Certo</span>
-      </div>
+      <a href="/Pages/index.html" class="logo-link">
+        <div class="logo">
+          <span class="logo-circle">DC</span>
+          <span class="logo-text">Descarte Certo</span>
+        </div>
+      </a>
       <nav class="menu">
         <a href="/Pages/index.html">Início</a>
         <a href="/Pages/mapa.html">Mapa</a>
@@ -25,7 +28,7 @@
         <a href="/Pages/educativo.html">Educativo</a>
         <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
-      <div class="auth-buttons">
+      <div class="auth-buttons" id="auth-area">
         <button
           onclick="window.location.href='/Pages/login.html'"
           class="login"
@@ -43,6 +46,16 @@
 
     <!-- Conteúdo principal -->
     <main>
+      <section class="mapa-section">
+        <h2>Mapa de Ecopontos</h2>
+        <p>Visualize os pontos de descarte correto em São Luis, MA:</p>
+        <div id="mapa"></div>
+      </section>
+      <section class="lista-ecopontos">
+        <h2>Lista de Ecopontos</h2>
+        <ul id="lista-ecopontos"></ul>
+      </section>
+    
       <section class="info-ecopontos">
         <h2>Informações Importantes</h2>
         <p>
@@ -89,18 +102,7 @@
           de coleta, para serem recolhidos pelos caminhões da coleta.
         </p>
       </section>
-
-      <section class="lista-ecopontos">
-        <h2>Lista de Ecopontos</h2>
-        <ul id="lista-ecopontos"></ul>
-      </section>
-      <section class="mapa-section">
-        <h2>Mapa de Ecopontos</h2>
-        <p>Visualize os pontos de descarte correto em São Luis, MA:</p>
-        <div id="mapa"></div>
-      </section>
     </main>
-
     <!-- Rodapé -->
 
     <footer>
@@ -116,10 +118,10 @@
           <div>
             <strong>Navegação:</strong>
             <nav class="footer-menu">
-              <a href="/Pages/index.html">Início</a><br />
-              <a href="/Pages/mapa.html">Mapa</a><br />
-              <a href="/Pages/denuncias.html">Denúncias</a><br />
-              <a href="/Pages/educativo.html">Área Educativa</a><br />
+              <a href="/Pages/index.html">Início</a>
+              <a href="/Pages/mapa.html">Mapa</a>
+              <a href="/Pages/denuncias.html">Denúncias</a>
+              <a href="/Pages/educativo.html">Área Educativa</a>
               <a href="/Pages/quemsomos.html">Quem Somos</a>
             </nav>
           </div>
@@ -143,5 +145,6 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="/Js/script.js"></script>
+    <script src="/Js/autenticacao.js"></script>
   </body>
 </html>

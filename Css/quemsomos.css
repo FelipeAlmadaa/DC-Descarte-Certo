@@ -39,6 +39,20 @@ header {
   font-weight: bold;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+
+.user-name {
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+}
+
 .menu a {
   margin: 0 12px;
   color: white;

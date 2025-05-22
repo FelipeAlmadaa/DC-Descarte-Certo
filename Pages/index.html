@@ -4,35 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descarte Certo</title>
+    <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
     <link rel="stylesheet" href="/Css/index.css" />
   </head>
   <body>
     <!-- Cabeçalho -->
     <header>
-      <div class="logo">
-        <span class="logo-circle">DC</span>
-        <span class="logo-text">Descarte Certo</span>
-      </div>
+      <a href="/Pages/index.html" class="logo-link">
+        <div class="logo">
+          <span class="logo-circle">DC</span>
+          <span class="logo-text">Descarte Certo</span>
+        </div>
+      </a>
       <nav class="menu">
         <a href="/Pages/index.html">Início</a>
-        <a href="/Pages/mapa.html">Mapa</a>
-        <a href="/Pages/denuncias.html">Denúncias</a>
+        <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
+        <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
         <a href="/Pages/educativo.html">Educativo</a>
         <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
-      <div class="auth-buttons">
-        <button
-          onclick="window.location.href='/Pages/login.html'"
-          class="login"
-        >
-          Entrar
-        </button>
-        <button
-          onclick="window.location.href='/Pages/cadastro.html'"
-          class="signup"
-        >
-          Cadastre-se
-        </button>
+      <div class="auth-buttons" id="authArea">
+        <button onclick="window.location.href='/Pages/login.html'" class="login">Entrar</button>
+        <button onclick="window.location.href='/Pages/cadastro.html'" class="signup">Cadastre-se</button>
       </div>
     </header>
     <div class="divisor"></div>
@@ -52,7 +45,7 @@
         </div>
       </section>
 
-      <section class="convite">
+      <section class="convite" id="convite">
         <h2>Junte-se a nós nessa missão</h2>
         <p>
           Faça parte da comunidade que está transformando o descarte de resíduos
@@ -75,10 +68,10 @@
           <div>
             <strong>Navegação:</strong>
             <nav class="footer-menu">
-              <a href="/Pages/index.html">Início</a><br />
-              <a href="/Pages/mapa.html">Mapa</a><br />
-              <a href="/Pages/denuncias.html">Denúncias</a><br />
-              <a href="/Pages/educativo.html">Área Educativa</a><br />
+              <a href="/Pages/index.html">Início</a>
+              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
+              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
+              <a href="/Pages/educativo.html">Área Educativa</a>
               <a href="/Pages/quemsomos.html">Quem Somos</a>
             </nav>
           </div>
@@ -98,5 +91,30 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const usuario = JSON.parse(localStorage.getItem('usuarioLogado'));
+      const authArea = document.getElementById('authArea');
+      const convite = document.getElementById('convite');
+
+      if (usuario) {
+        authArea.innerHTML = `
+          <span class="user-name">Olá, ${usuario.nome}</span>
+          <button onclick="logout()" class="logout">Sair</button>
+        `;
+
+        convite.innerHTML = `
+          <h2>Bem-vindo de volta!</h2>
+          <p>Explore o conteúdo e participe ativamente da nossa comunidade.</p>
+          <a href="/Pages/denuncias.html" class="btn cadastre-agora">Fazer denúncia</a>
+        `;
+      }
+
+      function logout() {
+        localStorage.removeItem('usuarioLogado');
+        window.location.reload();
+      }
+    </script>
+    <script src="/Js/authGuard.js"></script>
   </body>
 </html>

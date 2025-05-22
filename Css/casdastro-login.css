@@ -42,6 +42,13 @@ header {
   font-weight: bold;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
 .logo-circle {
   background-color: white;
   color: #007b55;

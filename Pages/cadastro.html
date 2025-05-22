@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descarte Certo - Cadastro</title>
+    <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
     <link rel="stylesheet" href="/Css/casdastro-login.css" />
   </head>
   <body>
     <!-- Cabeçalho -->
     <header>
-      <div class="logo">
-        <span class="logo-circle">DC</span>
-        <span class="logo-text">Descarte Certo</span>
-      </div>
+      <a href="/Pages/index.html" class="logo-link">
+        <div class="logo">
+          <span class="logo-circle">DC</span>
+          <span class="logo-text">Descarte Certo</span>
+        </div>
+      </a>
       <nav class="menu">
         <a href="/Pages/index.html">Início</a>
-        <a href="/Pages/mapa.html">Mapa</a>
-        <a href="/Pages/denuncias.html">Denúncias</a>
+        <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa</a>
+        <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias</a>
         <a href="/Pages/educativo.html">Educativo</a>
         <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
@@ -85,10 +88,10 @@
           <div>
             <strong>Navegação:</strong>
             <nav class="footer-menu">
-              <a href="/Pages/index.html">Início</a><br />
-              <a href="/Pages/mapa.html">Mapa</a><br />
-              <a href="/Pages/denuncias.html">Denúncias</a><br />
-              <a href="/Pages/educativo.html">Área Educativa</a><br />
+              <a href="/Pages/index.html">Início</a>
+              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/mapa.html')">Mapa
+              <a href="javascript:void(0);" onclick="verificarLoginAntesDeAcessar('/Pages/denuncias.html')">Denúncias
+              <a href="/Pages/educativo.html">Área Educativa</a>
               <a href="/Pages/quemsomos.html">Quem Somos</a>
             </nav>
           </div>
@@ -109,5 +112,6 @@
       </div>
     </footer>
     <script src="/Js/script-cadastro.js"></script>
+    <script src="/Js/authGuard.js"></script>
   </body>
 </html>

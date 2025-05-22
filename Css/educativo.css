@@ -11,9 +11,24 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.logo {
+logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
   font-weight: bold;
-  color: green;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
 }
 
 .menu {

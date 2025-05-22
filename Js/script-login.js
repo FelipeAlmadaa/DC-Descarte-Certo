@@ -1,32 +1,41 @@
-document.querySelector('form').addEventListener('submit', async function (event) {
-  event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+const form = document.querySelector('form');
 
-  const email = document.getElementById('email').value.trim();
-  const senha = document.getElementById('senha').value.trim();
+form.addEventListener('submit', async function (event) {
+event.preventDefault();
 
-  try {
-    const resposta = await fetch('http://localhost:5000/api/usuarios/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, senha })
-    });
+const email = document.getElementById('email').value.trim();
+const senha = document.getElementById('senha').value.trim();
 
-    const dados = await resposta.json();
+if (!email || !senha) {
+  alert('Por favor, preencha todos os campos.');
+  return;
+}
 
-    if (resposta.ok) {
-      // Salva dados do usuário no localStorage
-      localStorage.setItem('usuario', JSON.stringify({
-        id: dados.usuarioId,
-        email: email
-        // você pode adicionar mais campos se a API retornar, como nome
-      }));
+try {
+  const resposta = await fetch('http://localhost:5000/api/usuarios/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, senha })
+  });
 
-      alert('Login realizado com sucesso!');
-      window.location.href = '/Pages/home.html'; // Redireciona para a página principal
-    } else {
-      alert('Erro ao fazer login: ' + (dados.erro || dados.mensagem || 'Credenciais inválidas'));
-    }
-  } catch (erro) {
-    alert('Erro ao conectar com o servidor: ' + erro.message);
+  const dados = await resposta.json();
+
+  if (resposta.ok) {
+  localStorage.setItem('usuarioLogado', JSON.stringify({
+    id: dados.usuarioId,
+    nome: dados.nome,
+    email: email
+  }));
+
+  alert('Login realizado com sucesso!');
+  window.location.href = '/Pages/index.html';
+}
+ else {
+    alert('Erro ao fazer login: ' + (dados.erro || dados.mensagem || 'Credenciais inválidas'));
   }
+} catch (erro) {
+  alert('Erro ao conectar com o servidor: ' + erro.message);
+}
+});
 });

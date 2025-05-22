@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descarte Certo</title>
+    <link rel="icon" type="image/png" href="../imgs/faviconDC.png" />
     <link rel="stylesheet" href="/Css/denuncias.css" />
   </head>
 
   <body>
     <!-- Cabeçalho -->
     <header>
-      <div class="logo">
-        <span class="logo-circle">DC</span>
-        <span class="logo-text">Descarte Certo</span>
-      </div>
+      <a href="/Pages/index.html" class="logo-link">
+        <div class="logo">
+          <span class="logo-circle">DC</span>
+          <span class="logo-text">Descarte Certo</span>
+        </div>
+      </a>
       <nav class="menu">
         <a href="/Pages/index.html">Início</a>
         <a href="/Pages/mapa.html">Mapa</a>
@@ -21,7 +24,7 @@
         <a href="/Pages/educativo.html">Educativo</a>
         <a href="/Pages/quemsomos.html">Quem Somos</a>
       </nav>
-      <div class="auth-buttons">
+      <div class="auth-buttons" id="auth-area">
         <button
           onclick="window.location.href='/Pages/login.html'"
           class="login"
@@ -146,10 +149,10 @@
           <div>
             <strong>Navegação:</strong>
             <nav class="footer-menu">
-              <a href="/Pages/index.html">Início</a><br />
-              <a href="/Pages/mapa.html">Mapa</a><br />
-              <a href="/Pages/denuncias.html">Denúncias</a><br />
-              <a href="/Pages/educativo.html">Área Educativa</a><br />
+              <a href="/Pages/index.html">Início</a>
+              <a href="/Pages/mapa.html">Mapa</a>
+              <a href="/Pages/denuncias.html">Denúncias</a>
+              <a href="/Pages/educativo.html">Área Educativa</a>
               <a href="/Pages/quemsomos.html">Quem Somos</a>
             </nav>
           </div>
@@ -169,7 +172,7 @@
         </div>
       </div>
     </footer>
-
     <script src="/Js/denuncias.js"></script>
+    <script src="/Js/autenticacao.js"></script>
   </body>
 </html>

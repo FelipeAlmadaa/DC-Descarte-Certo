@@ -54,6 +54,14 @@ header {
   font-weight: bold;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+
 .menu a {
   margin: 0 12px;
   color: white;
@@ -77,6 +85,13 @@ header {
   color: white;
   transition: background-color 0.3s ease;
 }
+
+.user-name {
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+}
+
 
 /* Hero Section */
 .hero {
