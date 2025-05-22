@@ -43,22 +43,22 @@ Bem-vindo ao repositório front-end do projeto Descarte Certo (DC), uma platafor
 ---
 
 ## 🗂️ Estrutura de Pastas
-/
-├── Pages/
-│ ├── index.html
-│ ├── login.html
-│ ├── cadastro.html
-│ ├── mapa.html
-│ └── ...
-├── Css/
-│ └── estilo.css
-├── Js/
-│ ├── script-index.js
-│ ├── script-login.js
-│ └── ...
-├── imgs/
-│ └── faviconDC.png
-└── README.md
+/<br>
+├── Pages/<br>
+│ ├── index.html<br>
+│ ├── login.html<br>
+│ ├── cadastro.html<br>
+│ ├── mapa.html<br>
+│ └── ...<br>
+├── Css/<br>
+│ └── estilo.css<br>
+├── Js/<br>
+│ ├── script-index.js<br>
+│ ├── script-login.js<br>
+│ └── ...<br>
+├── imgs/<br>
+│ └── faviconDC.png<br>
+└── README.md<br>
 
 yaml
 Copiar
