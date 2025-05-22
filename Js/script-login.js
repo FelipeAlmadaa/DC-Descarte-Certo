@@ -29,7 +29,7 @@ try {
   }));
 
   alert('Login realizado com sucesso!');
-  window.location.href = '/Pages/index.html';
+  window.location.href = '/index.html';
 }
  else {
     alert('Erro ao fazer login: ' + (dados.erro || dados.mensagem || 'Credenciais inválidas'));

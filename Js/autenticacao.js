@@ -9,14 +9,14 @@ if (usuario && usuario.nome) {
     `;
 } else {
     authArea.innerHTML = `
-    <button onclick="window.location.href='/Pages/login.html'" class="login">Entrar</button>
-    <button onclick="window.location.href='/Pages/cadastro.html'" class="signup">Cadastre-se</button>
+    <button onclick="window.location.href='/login.html'" class="login">Entrar</button>
+    <button onclick="window.location.href='/cadastro.html'" class="signup">Cadastre-se</button>
     `;
 }
 });
 
 function logout() {
 localStorage.removeItem("usuarioLogado");
-window.location.href = "/Pages/index.html";
+window.location.href = "/index.html";
 }
 

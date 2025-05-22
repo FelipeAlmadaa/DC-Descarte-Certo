@@ -5,7 +5,7 @@ function verificarLoginAntesDeAcessar(url) {
   } else {
     alertComRedirect(
       "Faça login para acessar esta funcionalidade.",
-      "/Pages/login.html?msg=loginNecessario"
+      "/login.html?msg=loginNecessario"
     );
   }
 }

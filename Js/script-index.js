@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
       convite.innerHTML = `
         <h2>Bem-vindo, ${usuario.email}!</h2>
         <p>Explore nossos conteúdos, denuncie irregularidades ou consulte pontos de coleta.</p>
-        <a href="/Pages/mapa.html" class="btn cadastre-agora">Ver pontos de coleta</a>
+        <a href="/mapa.html" class="btn cadastre-agora">Ver pontos de coleta</a>
       `;
     }
 
